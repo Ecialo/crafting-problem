@@ -22,6 +22,8 @@ For simplicity you also can use the bash script in the other terminal:
 
 * I decided to return a `400` status code when a cycle is detected in the tasks. It's bad data, but not broken, and I think the request should be rejected. I also return `400` for tasks that depend on nonexistent tasks.
 
+* I decided not to do excessive error handling.
+
 ## List of examples
 
 * `example.json` -- provided example
