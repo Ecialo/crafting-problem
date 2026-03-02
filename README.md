@@ -11,9 +11,7 @@ The routes are:
 For simplicity you also can use the bash script in the other terminal:
 
 * To sort job tasks and get a JSON response: `./send_to_sort.sh sort`
-
 * To acquire the fully compiled script: `./send_to_sort.sh compile`
-
 * To use a custom payload: `./send_to_sort.sh compile ./path/to/payload.json`
 
 ## Some decisions
@@ -22,7 +20,7 @@ For simplicity you also can use the bash script in the other terminal:
 
 * I decided not to construct the resulting script as the toposort goes. It's definitely possible and might (or might not) gain something by avoiding an additional traversal of the result structure, but it would raise code complexity, and I see no reason to do it for this task.
 
-* I decided to return a `400` status code when a cycle is detected in the tasks. It's bad data, but not broken, and I think the request should be rejected. I also return 400 for tasks that depend on nonexistent tasks.
+* I decided to return a `400` status code when a cycle is detected in the tasks. It's bad data, but not broken, and I think the request should be rejected. I also return `400` for tasks that depend on nonexistent tasks.
 
 ## List of examples
 
