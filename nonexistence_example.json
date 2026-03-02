@@ -1,0 +1,11 @@
+{
+    "tasks": [
+        {
+            "name": "task-2",
+            "command": "cat /tmp/file1",
+            "requires": [
+                "task-3"
+            ]
+        }
+    ]
+}
