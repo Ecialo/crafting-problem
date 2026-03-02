@@ -27,3 +27,4 @@ For simplicity you also can use the bash script in the other terminal:
 * `example.json` -- provided example
 * `cyclic_example.json` -- example with cyclic dependicies
 * `nonexistence_example.json` -- example with nonexistent dependency
+* `isolated_example.json` -- example with isolated task.
